@@ -325,8 +325,8 @@ html {
   letter-spacing: 0.02em;
   /* NAVY BLUE */
   color: var(--dark-navy-blue);
-  margin-top: 0;
-  margin-bottom: 8px;
+ margin: 0 auto;
+  padding-bottom: 8px;
 }
 .team-profession {
   font-size: 16px;
@@ -343,7 +343,7 @@ html {
 }
 .caption {
   margin: 0 auto;
-  text-align: center;
+
 }
 
 .caption-list {
@@ -437,7 +437,9 @@ html {
 }
 .content-info {
   padding-top: 32px;
-  padding-right: 32px;
+  padding-bottom: 32px;
+  align-items: flex-start;
+    text-align:start
 }
 .content-name {
   font-weight: 500;
@@ -457,7 +459,8 @@ html {
   letter-spacing: 0.02em;
   /* SLATE */
   color: var(--primary-text-color);
-  margin-top: 8px;
+  margin:0 auto;
+padding-top: 8px;
 }
 
 .footer {
