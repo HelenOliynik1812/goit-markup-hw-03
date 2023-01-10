@@ -36,13 +36,7 @@ html {
   background: var(--default-bg-color);
   border-bottom: 1px solid var(--accent-color);
 }
-.container-header {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  /*utline: 1px solid red;*/
-}
+
 .header-body {
   display: flex;
   align-items: center;
@@ -110,7 +104,6 @@ html {
   margin-left: auto;
 }
 
-.header-contact,
 .header-item + .header-item {
   margin-left: 40px;
 }
@@ -156,6 +149,10 @@ html {
 .main {
 }
 .container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .main-section {
@@ -201,16 +198,11 @@ html {
 .main-btn:focus {
   background: var(--pressed-state-color);
 }
-.container-hero {
-  margin-top: 120px;
-  margin-bottom: 120px;
-}
 
 .hero {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .hero-list {
   margin-top: 0;
@@ -247,16 +239,8 @@ html {
   margin-top: 0;
   margin-bottom: 0;
 }
-.product-container {
-  margin-top: 0;
-  margin-bottom: 120px;
-}
+
 .product {
-  width: 1158px;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
   text-align: center;
   margin: 0 auto;
 }
@@ -281,24 +265,21 @@ html {
   border: 1px solid #e7e9fc;
   margin-right: 24px;
 }
+.product-img {
+  display: block;
+}
 
 .product-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.team-container {
-  height: 732px;
-
-  background-color: var(--light-mode-backgrounds);
-}
 .team {
-  width: 1158px;
   padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-bottom: 120px;
   text-align: center;
   margin: 0 auto;
+
+  background-color: var(--light-mode-backgrounds);
 }
 .team-title {
   font-weight: 700;
@@ -311,28 +292,31 @@ html {
   color: var(--hero-background);
   margin-top: 0;
   margin-bottom: 72px;
-  padding-top: 120px;
 }
 .team-list {
   margin-top: 0;
-  margin-bottom: 120px;
   display: flex;
 }
 .team-item {
   background: var(--default-bg-color);
   margin-right: 24px;
 }
+.team-img {
+  display: block;
+}
+
 .team-item:nth-child(4n) {
   margin-right: 0;
 }
 .team-link {
-  padding-top: 232px;
-  padding-bottom: 120px;
 }
 .team-link:hover,
 .team-link:focus {
 }
-
+.team-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -351,31 +335,26 @@ html {
   letter-spacing: 0.02em;
   /* SLATE */
   color: var(--primary-text-color);
-  margin-top: 0;
-  margin-bottom: 32px;
+  margin: 0;
 }
 
 /*Portfolio*/
 .main-content {
 }
 .caption {
-}
-.caption-conteiner {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
-  margin-top: 96px;
-  margin-bottom: 72px;
   text-align: center;
 }
+
 .caption-list {
   margin: auto;
   display: flex;
   /*outline: 1px solid red;*/
   flex-direction: row;
   justify-content: center;
- align-items: flex-start;
+  align-items: flex-start;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 .visually-hidden {
@@ -392,8 +371,7 @@ html {
 }
 
 .caption-list .caption-item:not(:last-child) {
-  margin-right:24px;
-
+  margin-right: 24px;
 }
 
 .caption-item .caption-btn {
@@ -434,18 +412,11 @@ html {
   background: var(--pressed-state-color);
   color: var(--active-text-color);
 }
-.content-container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  margin-top: 0;
-  margin-bottom: 120px;
-  text-align: center;
-}
+
 .content-list {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 120px;
 }
 .content-item {
   box-sizing: border-box;
@@ -461,6 +432,13 @@ html {
 .content-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+.content-img {
+  display: block;
+}
+.content-info {
+  padding-top: 32px;
+  padding-right: 32px;
+}
 .content-name {
   font-weight: 500;
   font-size: 20px;
@@ -469,8 +447,8 @@ html {
   letter-spacing: 0.02em;
   /* NAVY BLUE */
   color: var(--hero-background);
-  margin-top: 32px;
-  margin-bottom: 0;
+
+  margin: 0 auto;
 }
 .content-direction {
   font-size: 16px;
@@ -480,18 +458,10 @@ html {
   /* SLATE */
   color: var(--primary-text-color);
   margin-top: 8px;
-  margin-bottom: 32px;
 }
 
 .footer {
   background: var(--dark-navy-blue);
-}
-
-.footer-container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 100px;
 }
